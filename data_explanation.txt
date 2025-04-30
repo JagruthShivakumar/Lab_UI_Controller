@@ -1,0 +1,57 @@
+
+### Data Explanation for "experiment_data.csv"
+
+This file contains the recorded sensor data from the lab experiment. It consists of two columns:
+
+1. **Timestamp**: The exact date and time when the data was collected.
+2. **Value**: The simulated sensor data reading at the given timestamp.
+
+#### Structure of the Data
+
+| Timestamp (Date and Time)          | Value (Sensor Reading)          |
+|------------------------------------|---------------------------------|
+| 2025-04-30 17:13:01.270649 | 24.397328679442115 |
+| 2025-04-30 17:13:02.422081 | 21.017323954723757 |
+| 2025-04-30 17:13:03.590662 | 21.22194735776214 |
+| 2025-04-30 17:13:04.852902 | 23.403141277862414 |
+| 2025-04-30 17:13:06.008263 | 23.491423275819532 |
+
+#### Columns Description:
+
+1. **Timestamp**:
+   - This represents the **exact date and time** the sensor data was recorded.
+   - Format: `YYYY-MM-DD HH:MM:SS.mmmmmm` (microsecond precision).
+   - Example: `2025-04-30 17:05:21.676854` means the data was recorded on **April 30, 2025, at 17:05:21 and 676854 microseconds**.
+
+2. **Value**:
+   - This is the **sensor reading** at the given timestamp.
+   - It is a **floating-point number** representing a measurement, such as temperature, voltage, or another relevant value.
+   - Example: `24.622818734339784` is the simulated sensor reading at that timestamp.
+
+#### Observations:
+
+- The **timestamps** are **sequential**, increasing by approximately 1 second, as per the data collection logic.
+- The **values** are **randomly generated** within a specified range to simulate sensor fluctuations during the experiment.
+
+---
+
+#### Example Interpretation:
+
+| Timestamp                      | Value        |
+|---------------------------------|--------------|
+| 2025-04-30 17:05:21.676854      | 24.622818734 |
+| 2025-04-30 17:05:22.762808      | 24.921818900 |
+| 2025-04-30 17:05:23.823464      | 22.690492717 |
+
+- **2025-04-30 17:05:21.676854**: At this time, the sensor reading was **24.62**.
+- **2025-04-30 17:05:22.762808**: One second later, the sensor reading increased slightly to **24.92**.
+- **2025-04-30 17:05:23.823464**: Another second later, the reading dropped to **22.69**.
+
+#### Usage:
+
+- You can use this data to:
+  - Analyze trends over time.
+  - Plot the data for visualization.
+  - Apply data analysis techniques such as smoothing, averaging, or filtering.
+
+This file is a key output of the lab experiment simulation, and you can use it for further analysis or experiments.
